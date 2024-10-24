@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <force action="./display.html">
+    <!-- 
+       FROM
+         - An HTML from is used to collect user Input.
+         -It is represented by <from> tag containing different
+            types of input elements in it.
+         - action attribute helps the from to redirect the page to
+         another ,if submitted through the button in the from.
+    -->
+
+   <style>   
+           #name{
+                  
+
+           }
+
+   </style> 
+
+   <label for="Name">Name </label>
+   <!--
+         LABLES TAGS:
+          - A label tag is used to disclose a text in the force.
+          reffering ti the input field.
+          - "for" key is attribute is mapped with the input
+          element's id to find the respective field to it.
+   
+   -->
+
+   <input type="text" id ="name" placeholder="Full name">
+   <br><br>
+   <!--
+            INPUT TAG
+             - Having an input field to store the user's data.
+             - Defalut input is of 'text' type.
+             -Attributes
+               - required :      MAkes the input field mandatory.
+               -disabled :       makes the  input field inactive.
+               -checked :        makes the selected checkbox checked.
+               -placeholder:     helps the users to understand about an input field.
+   -->
+
+    <!--
+        - TYPES
+                -Text [defalut state]
+                - number
+                -data
+                -password
+                -email
+                -color
+                -url
+                -file
+                -time
+                -Datatime
+                -radio
+                -Buttons
+                -Submit
+                -Reset
+    -->
+
+       <label from="num"> Ph-no Number</label>
+       <input type="number" id="num" placeholder="Phone Number" Max="9">
+       <br><br>
+
+       <label from="data">Data of Birth </label>
+       <input type="data" id="date" placeholder="data of Birth"  >
+       <br><br>
+
+       <label for="pass">password <span style="color : red; font-size: 15px;">*</span></label>
+       <input type="data" id="pass" required placeholder="password">
+       <br><br>
+
+       <label from="mail">Email </label>
+       <input type="email" id="email" placeholder="Email">
+       <br><br>
+
+       <label> Gender : </label>
+       <input type="radio" name="Gender" id= "male" value="Male">
+       <label for ="male">MAlE</label>
+       <input type="radio" name="Gender" id= "female" value="female">
+       <label for ="female">female</label>
+       <input type="radio" name="Gender" id= "others" value="others">
+       <label for ="others">others</label>
+       <br><br>
+
+       <label>Language:</label>
+        <input type="checkbox" name="Language" id="eng" value="English">
+        <label for ="eng">English</label>
+        <input type="checkbox" name="Language" id="hin" value="Hindi">
+        <label for ="hin">Hindi</label>
+        <input type="checkbox" name="Language" id="beng" value="Bengali">
+        <label for ="beng">Bengali</label>
+        <input type="checkbox" name="Language" id="mar" value="marathi">
+        <label for ="mar">Marathi</label>
+        <input type="checkbox" name="Language" id="tam" value="tamil">
+        <label for ="tam">tamil </label>
+        <br><br>
+
+        <label for="count">Country :</label>
+        <select id="count">
+            <option selected disabled>Please select a Country</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Egypt">Egypt</option>
+        </select>
+         <br><br>
+
+        <button>Sumbit-btn</button>
+        
+        <input type="submit" value="submit-inp">
+        <input type="reset"  value="reset">
+
+      </from>  
+        
+</body>
+</html>

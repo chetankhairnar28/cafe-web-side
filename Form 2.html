@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <from action="." novalidate>
+       <!--
+           NOVALIDATE attributed specifies that the from data should not
+           be validated when submitted 
+       -->
+    <label for="name">First name:</label>
+    <input type="text" id="name" autocomplete="off"> <br><br>
+    <!--
+       AUTOCOMPLETE attributed allows the browser to predict the value,when a user startsto type
+       in the respitive filed.
+       Autofill in the input field , based on eariler typed values 
+    -->
+
+    <label for="pass">Password</label>
+    <input type="password" id="pass" autofocus> <br><br>
+    <!--
+         AUTOFOCOUS attribute specifies that the element should be automatically get focous
+         when page focus when the page loads.
+    -->
+
+    <label for="appointment">Select a time</label>
+    <input type="time" id="appointment"> <br><br>
+    <!--
+         TYPE - time helps in inserting a proper times in the system
+    --> 
+
+    <label for="fac_color">Select a time</label>
+    <input type="color" id="fac_color">
+    <br><br>
+
+    <label for="telephone">telephone</label>
+    <input type="tel" id="fac_color">
+    <br><br>
+
+    <label for="profil">profil url</label>
+    <input type="url" id="fac_color">
+    <br><br>
+
+    <label for="resume">upload resume(single)</label>
+    <input type="file" id="resume">
+    <br><br>
+
+    <label for="image">upload image (mul):</label>
+    <input type="file" id="image">
+    <br><br>
+     
+    <input type="submit">
+            
+    </from>
+    
+    <!-- OUTPUT TAG-->
+
+
+         <h4> Output tag Example</h4>
+
+         <form oninput="sum.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="number" id="a" value="55"> +
+            <input type="number" id="b" value="5"> =
+            <output name="Sum" for="a b"></output>
+         </form>
+
+
+</body>
+</html>
