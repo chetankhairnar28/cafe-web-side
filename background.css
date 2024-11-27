@@ -1,0 +1,17 @@
+
+
+#image{
+
+    background-image: url(i.1.jpg);
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    border-radius: 10px;
+
+
+
+}
+
+

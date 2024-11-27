@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!--   STATIC
+
+   static positioned elements are not affected by the top ,bottom,left,and right properties
+
+   An element with position : statics; is not positioned in any special way;
+   IT is always positioned according to the normal flow of the page:
+    
+-->
+     <div style="
+           margin: 15 px;
+           position : static;
+           border : 1px soild darkcyan;">
+
+           This is at position Static
+
+</div>
+  
+
+
+ <!--  FIXED
+             
+        An element with position : fixed; is positioned relative to the viewport,
+          which means it always stays in the same place even if the page is scrolled
+ 
+ --> 
+
+ <!-- <div style="position : fixed;
+              
+            border : 1px solid darkorange;">
+            This is at position Fixed
+ 
+ 
+ 
+ -->
+
+ <!-- Sticky
+          
+          An element with position : sticky: is positioned based on the user's scroll position.
+           A sticky element toggles between relative and fixed,depending on the scroll position
+ 
+ -->
+
+ <!-- <div style="position"-->
+
+
+<!--Relative
+   
+    An element with position : relative ; is positioned
+
+
+-->
+    <div style="position: relative;
+             
+                 border: 1px solid darkcyan;
+                 width: 300px;
+                 height: 300px;">
+                 
+                 This is  position absolute
+                </div>
+
+
+      <!-- Absolute
+       
+           An element with position : absolute; is positioned relativ to the nearest positioned
+           ancestor (insted of positioned relative to the viewport, like fixed).
+           if an absolute positioned element has no positioned ancestors, it uses the document
+      
+      -->          
+
+
+      <div style="position: absolute;
+
+                  border: 1 px solid darkcyan;
+                  background-color: darkslategray;
+                  color: aliceblue;
+                  margin: 50px;
+                  top: 20%;">
+                  
+                 THis is position absolute
+                </div>
+
+</body>
+</html>
